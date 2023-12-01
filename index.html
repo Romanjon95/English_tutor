@@ -10,6 +10,11 @@
 <body>
   <!-- First section -->
   <section class="main-section">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="container main-section__nav-container">
       <!-- Navigation menu -->
       <header class="main-section__header">
@@ -36,18 +41,24 @@
       <!-- Right side -->
       <div class="right-wrapper">
         <div class="right-wrapper__icons-box icons">
-          <div class="icons__item"><img class="icons__img" src="./icons/whatsapp.svg" alt="whatsapp"></div>
-          <div class="icons__item">
-            <img class="icons__img" src="./icons/telegram.svg" alt="telegram">
+          <div class="icons__item social-media"><a href="https://wa.me/79645989946" target="_blank"><img class="icons__img" src="./icons/whatsapp.svg" alt="whatsapp"></a></div>
+          <div class="icons__item social-media">
+            <a href="https://t.me/Roman0195" target="_blank">
+              <img class="icons__img" src="./icons/telegram.svg" alt="telegram">
+            </a>
           </div>
-          <div class="icons__item">
-            <img class="icons__img" src="./icons/instagram.svg" alt="instagram">
+          <div class="icons__item social-media">
+            <a href="https://www.instagram.com/romanjon05/" target="_blank">
+              <img class="icons__img" src="./icons/instagram.svg" alt="instagram">
+            </a>
           </div>
-          <div class="icons__item">
-            <img class="icons__img" src="./icons/linkedin.svg" alt="linkedin">
+          <div class="icons__item social-media">
+            <a href="https://www.linkedin.com/in/romanjon-arislanov-83b422262/" target="_blank">
+              <img class="icons__img" src="./icons/linkedin.svg" alt="linkedin">
+            </a>
           </div>
         </div>
-        <h1 class="right-wrapper__title title">I am Romanjon<hr class="title__underline"></h1>
+        <h1 class="right-wrapper__title title">I am Romanjon<hr class="title__underline underline"></h1>
         <p class="right-wrapper__text">English tutor with 7 years of experience</p>
         <button class="right-wrapper__button button">Book a lesson</button>
       </div>
@@ -82,21 +93,21 @@
           <p class="cards-item__subtitle"></p>
           <p class="cards-item__text">30 min</p>
           <p class="cards-item__price">$6</p>
-          <button class="cards-item__btn button">Book a lesson</button>
+          <button class="cards-item__btn button"><a class="order-link" href="./order.html">Book a lesson</a></button>
         </div>
         <div class="second-section__cards-item cards-item">
           <p class="cards-item__title">Individual</p>
           <p class="cards-item__subtitle"></p>
           <p class="cards-item__text">50 min</p>
           <p class="cards-item__price sale"><strike>$12</strike> $10</p>
-          <button class="cards-item__btn button">Book a lesson</button>
+          <button class="cards-item__btn button"><a class="order-link" href="./order.html">Book a lesson</a></button>
         </div>
         <div class="second-section__cards-item cards-item">
           <p class="cards-item__title">Pairs</p>
           <p class="cards-item__subtitle"></p>
           <p class="cards-item__text">50 min</p>
           <p class="cards-item__price">$7 each</p>
-          <button class="cards-item__btn button">Book a lesson</button>
+          <button class="cards-item__btn button"><a class="order-link" href="./order.html">Book a lesson</a></button>
         </div>
       </div>
     </div>
@@ -141,7 +152,7 @@
           <input data-required="true" class="form__input" type="text" placeholder="name" name="user_name">
         </div>
         <div class="form__input-box input-box">
-          <input data-required="true" class="form__input" type="tel" placeholder="your WhatsApp or Telegram" name="user_phone">
+          <input data-required="true" class="form__input" type="tel" placeholder="your WhatsApp / Telegram" name="user_phone">
         </div>
         <div class="form__input-box input-box">
           <input data-required="true" class="form__input" type="text" placeholder="email" name="user_email">
@@ -186,6 +197,38 @@
       </ul>
     </div>
   </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__box-title">
+        <h3 class="footer__title">
+          If you have any question, you can contact me anytime by clicking a button below!
+        </h3>
+      </div>
+      <div class="footer__icons-box icons">
+          <div class="icons__item"><a href="https://wa.me/79645989946" target="_blank"><img class="icons__img" src="./icons/whatsapp.svg" alt="whatsapp"></a></div>
+          <div class="icons__item">
+            <a href="https://t.me/Roman0195" target="_blank">
+              <img class="icons__img" src="./icons/telegram.svg" alt="telegram">
+            </a>
+          </div>
+          <div class="icons__item">
+            <a href="https://www.instagram.com/romanjon05/" target="_blank">
+              <img class="icons__img" src="./icons/instagram.svg" alt="instagram">
+            </a>
+          </div>
+          <div class="icons__item">
+            <a href="https://www.linkedin.com/in/romanjon-arislanov-83b422262/" target="_blank">
+              <img class="icons__img" src="./icons/linkedin.svg" alt="linkedin">
+            </a>
+          </div>
+        </div>
+      <a href="#"><img class="main-section__img footer__img" src="./icons/eng.png" alt="Eng"></a>
+      <a class="order-link" href="https://github.com/Romanjon95" target="_blank">
+        <h3 class="footer__text">This site was designed by Romanjon</h3>
+      </a>
+    </div>
+  </footer>
 
   <!-- Loading the page -->
   <div id="preloader_malc">
@@ -193,60 +236,6 @@
       <div class="handle"></div>
     </div>
   </div>
-  <style type="text/css">
-    #preloader_malc {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #e2e2e2;
-      z-index: 99
-    }
-  
-    .cup {
-      background: url(./img/coffee.png);
-      width: 180px;
-      height: 140px;
-      line-height: 40px;
-      border: 6px solid white;
-      position: absolute;
-      border-radius: 0px 0px 70px 70px;
-      animation: fill 2.5s infinite;
-      background-repeat: repeat-x;
-      background-position: 0px 140px ;
-      top: 40%;
-      left: 40%;
-    }
-    @keyframes fill{
-      0%{
-        background-position: 0px 140px;
-      }
-      20%{
-        background-position: -450px 100px;
-      }
-      40%{
-        background-position: -900px 50px;
-      }
-      80%{
-        background-position: -1350px -40px;
-      }
-      100%{
-        background-position: 0px 140px;
-      }
-    }
-
-    .handle {
-      height: 70px;
-      width: 50px;
-      background-color: transparent;
-      border: 6px solid white;
-      position: relative;
-      left: 168px;
-      top: 10px;
-      border-radius: 0px 25px 80px 0px;
-    }
-  </style>
   <script type="text/javascript">
   
     window.onload = function() {
@@ -265,5 +254,6 @@
   <script src="./ancor.js"></script>
   <script src="./validation.js"></script>
   <script src="./accordeon.js"></script>
+  <script src="./hamburger.js"></script>
 </body>
 </html>
