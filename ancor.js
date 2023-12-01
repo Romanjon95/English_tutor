@@ -32,7 +32,15 @@ process.addEventListener('click', () => {
 
 //FAQ page
 const faq = document.querySelector('.faq');
-const fifthSection = document.querySelector('.fourth-section');
+const fifthSection = document.querySelector('.fifth-section');
 faq.addEventListener('click', () => {
   scrollTo(fifthSection);
+})
+
+//main section book button
+
+const book = document.querySelector('.button');
+
+book.addEventListener('click', () => {
+  scrollTo(secondSection);
 })
