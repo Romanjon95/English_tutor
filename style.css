@@ -33,10 +33,27 @@ html {
   margin: 0 auto;
 }
 
+.languages {
+  display: flex;
+  flex-direction: column;
+}
+.languages__link {
+  text-decoration: none;
+  color: black;
+}
+.languages__link:hover {
+  color: rgba(255, 81, 0, 0.404);
+}
+
 .main-section {
   min-height: 800px;
   background: #e2e2e2;
   padding-top: 16px;
+}
+.main-section__header {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
 }
 .main-section__img {
   width: 50px;

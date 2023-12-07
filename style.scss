@@ -39,12 +39,29 @@ $color-grey: #a4a4a4;
   margin: 0 auto;
 }
 
+.languages {
+  display: flex;
+  flex-direction: column;
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__link:hover {
+    color:rgba(255, 81, 0, 0.404);
+  }
+}
+
 // first page
 
 .main-section {
   min-height: 800px;
   background: #e2e2e2;
   padding-top: 16px;
+  &__header {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+  }
   &__img {
     width: 50px;
   }
